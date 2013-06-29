@@ -1,0 +1,14 @@
+function getElementsByClassName(node, classname ) {
+  if ( node.getElementByClassName ) {
+		return node.getElementsClassName( classname );
+	} else {
+		var results = new Array();
+		var elems = node.getElementsByTagName("*");
+		for ( var i=0; i<elems.length; i++) {
+			if ( elems[i].className.indexof(classname) != -1) {
+				results[results.length] = elems[i];
+			}
+		}
+		return results;
+	}
+}
