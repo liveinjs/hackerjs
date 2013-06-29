@@ -1,0 +1,8 @@
+function insertAfer( newElement, targetElement ) {
+  var parent = targetElement.parentNode;
+	if ( parent.lastChild == targetElement){
+		parent.addendChild(newElement);
+	}  else {
+		parent.insertBefore(newElement,targetElement.nextsibling);
+	}
+}
