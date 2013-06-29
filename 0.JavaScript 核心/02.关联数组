@@ -1,0 +1,6 @@
+var lennon = Array();
+lennon["name"] = "John";
+lennon["year"] = "2013";
+
+这样的数组叫做关联数组，因为数组也是一种对象，所以在这里，实际上是给lennon 数组增加了 name,year 两个新属性。
+理想情况下，不得推荐改变数组属性，应该使用通用对象Object.
