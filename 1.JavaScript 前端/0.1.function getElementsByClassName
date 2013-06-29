@@ -3,7 +3,7 @@ function getElementsByClassName(node, classname ) {
 		return node.getElementsClassName( classname );
 	} else {
 		var results = new Array();
-		var elems = node.getElementsByTagName("*");
+		var elems = node.getElementsByTagName("*");//参数可以是正则表达式对象！
 		for ( var i=0; i<elems.length; i++) {
 			if ( elems[i].className.indexof(classname) != -1) {
 				results[results.length] = elems[i];
