@@ -12,3 +12,4 @@ function getElementsByClassName(node, classname ) {
 		return results;
 	}
 }
+//不适用于多个类名
