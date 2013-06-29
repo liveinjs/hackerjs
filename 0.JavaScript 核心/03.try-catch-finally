@@ -1,0 +1,28 @@
+try…catch…finally…语法中除了try以外catch和finally都是可选的（两者必须要有一个），
+也就是说try…catch…finally…语法有以下三种形式：
+
+try{
+//some code
+}
+catch(e){
+//somecode
+}
+finally{
+//some code
+}
+
+--------------------
+try{
+//some code
+}
+catch(e){
+//somecode
+}
+
+------------------------------------------------------------------
+try{
+//some code
+}
+finally{
+//some code
+}
