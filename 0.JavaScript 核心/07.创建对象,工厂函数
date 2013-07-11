@@ -1,0 +1,20 @@
+function range(from,to) { //定义工厂函数，生产出一个个“对象”
+    var r = inherit(range.methods);
+    r.from = from;
+    r.to = to;
+    return r;
+}
+
+range.methods = {
+    includes: function (x) {
+        return this.from <=x && x <=this.to;
+    },
+
+    foreach: function (f) {
+        for (var x= Math.ceil(this.from);x < this.to;x++) {
+            f(x);
+        }
+    },
+
+    toString: function () {return "(" + this.from + "..." + this.to +  ")";}
+}
