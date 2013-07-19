@@ -1,3 +1,35 @@
 it is a fundamental piece of making every other API work.
 
 这是一个让其他api工作的基本的 api, 是其它所有api能够工作的基础。
+
+s.emit('abc');
+
+
+事件是绑定到实例的，
+
+
+the various instances of the Server class don’t share
+events.
+
+实例不共享事件的。
+
+
+------------------------
+
+var utils = require('utils'),
+EventEmitter = require('events').EventEmitter;
+var Server = function() {
+console.log('init');
+};
+utils.inherits(Server, EventEmitter);
+var s = new Server();
+s.on('abc', function() {
+console.log('abc');
+});
+
+var z = new server();
+
+z.on("abc",function();); //错误，事件不共享的，所以这里没有 be fired.
+
+s.emit('abc');
+
