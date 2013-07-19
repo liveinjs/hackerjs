@@ -48,3 +48,8 @@ var args = Array.prototype.slice.call(arguments, 1);//apply 调用事件处理�
 handler.apply(this, args);
 }
 
+笔记： Node, emit 的时候，直接使用 它的参数
+
+例如:
+
+s.emit('abc','a'); //直接用这个参数
