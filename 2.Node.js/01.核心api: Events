@@ -60,3 +60,5 @@ This means that the context in which the event listeners are
 called is the context of EventEmitter  —----- not their original context.
 
 处理函数的上下文为，EventEmitter，而不是他自己的上下文。
+
+The changes in context caused by EventEmitter!
