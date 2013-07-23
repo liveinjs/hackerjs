@@ -8,3 +8,7 @@ md5.digest()
 although hash.update() looks a lot like a stream, it
 isn’t really. You can easily hook a stream to hash.update(), but you can’t use
 stream.pipe().
+
+sha1.update('foo');
+sha1.update('bar');
+sha1.digest('hex');
