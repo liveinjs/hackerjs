@@ -1,0 +1,6 @@
+the Hash object is finalized and cannot be reused
+
+Hash 对象不能被重复 使用 ,,,
+
+
+md5.digest()
