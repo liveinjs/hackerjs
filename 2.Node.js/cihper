@@ -1,0 +1,21 @@
+ var crypto = require('crypto');
+ var fs = require('fs');
+
+var pem = fs.readFileSync('key.pem'); var key = pem.toString('ascii');
+
+ var plaintext = new Buffer('abcdefghijklmnopqrstuv');
+ var encrypted = "";
+ var cipher = crypto.createCipher('blowfish', key);
+
+ encrypted += cipher.update(plaintext, 'binary', 'hex'); //返回所以一个或者多个完整的 black
+ encrypted += cipher.final('hex');  // .final， there isn’t enough data to create a full block,输出被填充，并返回最后一个完整的 black
+
+ var decrypted = "";
+ var decipher = crypto.createDecipher('blowfish', key);
+
+ decrypted += decipher.update(encrypted, 'hex', 'binary');  //返回所以一个或者多个完整的 black
+ decrypted += decipher.final('binary'); // .final， there isn’t enough data to create a full block, 输出被填充完整，并返回最后一个完整的 black
+
+ var output = new Buffer(decrypted);
+
+ console.log(output);
