@@ -4,3 +4,7 @@ Hash 对象不能被重复 使用 ,,,
 
 
 md5.digest()
+
+although hash.update() looks a lot like a stream, it
+isn’t really. You can easily hook a stream to hash.update(), but you can’t use
+stream.pipe().
