@@ -1,7 +1,11 @@
 var exec = require('child_process').exec,
     child;
 
-child = exec('cat *.js bad_file | wc -l', //如果命令可以执行，则error 为 null ,如果命令是错误的运行不了，error 为 error status code
+
+child = exec('cat *.js bad_file | wc -l', 
+//如果命令可以执行，则error 为 null ,如果命令是错误的运行不了，error 为 error status code 以及 stderr 并结束 进程。
+//when a process is successful, there may still be data on stderr（当了进程运行成功，还是有可能有错误输出的在 stderr ，比如文件不存在。）
+
   function (error, stdout, stderr) {
     console.log('stdout: ' + stdout);
     console.log('stderr: ' + stderr);  //文件不存子，所以会有错误输出 stderr 
