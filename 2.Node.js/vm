@@ -1,0 +1,4 @@
+//这个vm子系统维护的自己的上下文。
+vm.runInThisContext('v=0');//定义变量
+vm.runInThisContext('v=v+1');// 在另一个vm里调用
+
