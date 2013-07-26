@@ -1,0 +1,4 @@
+Event: 'uncaughtException'#
+Emitted when an exception bubbles all the way back to the event loop. 
+(当一个异常‘冒泡’，进入事件循环时（没有被捕获处理），Event: 'uncaughtException'被激发)
+If a listener is added for this exception, the default action (which is to print a stack trace and exit) will not occur.
