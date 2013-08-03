@@ -1,6 +1,7 @@
 event-loop-queue ：可以理解为 函数循环队列
 
-runYourScript();//运行当前代码 ，
+runYourScript();//运行当前代码 ，遇到函数时，先把函数放入队列。fires will be at the root of the
+               //stack trace.
 while (atLeastOneEventIsQueued) { //当前代码运行到最后一行，V8 ask, “What’s on the queue?”
 fireNextQueuedEvent();
 };
