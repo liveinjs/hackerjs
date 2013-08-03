@@ -1,4 +1,4 @@
-event-loop-queue ：可以理解为 回调函数循环队列
+event-loop-queue ：可以理解为 函数循环队列
 
 runYourScript();
 while (atLeastOneEventIsQueued) {
