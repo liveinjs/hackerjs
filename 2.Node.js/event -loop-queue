@@ -1,8 +1,23 @@
 event-loop-queue ：可以理解为 回调函数循环队列
 调用函数： 就是javascript 丢给VM一个任务，让VM去做。
 
-runYourScript();//运行当前代码 ，遇到函数时，先把函数放入队列。fires will be at the root of the
-               //stack trace.
-while (atLeastOneEventIsQueued) { //当前代码运行到最后一行，V8 ask, “What’s on the queue?”
+runYourScript();
+while (atLeastOneEventIsQueued) { 
 fireNextQueuedEvent();
 };
+
+-----------------------------------------
+
+var hello = "hello ";
+
+he(hello, say); //调用he() ,say() 放入事件循环，并被 fired
+
+console.log(hello);
+
+function he( v,say) {
+    say(v);
+}
+
+function say( v )  {
+    console.log(v + "+1");
+}
