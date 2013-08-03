@@ -10,7 +10,7 @@ fireNextQueuedEvent();
 
 var hello = "hello ";
 
-he(hello, say); //调用he() ,say() 放入事件循环，并被 fired
+he(hello, say); //这里非异步
 
 console.log(hello);
 
