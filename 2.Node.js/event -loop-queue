@@ -1,4 +1,5 @@
 event-loop-queue ：可以理解为 函数循环队列
+调用函数： 就是javascript 丢给VM一个任务，让VM去做。
 
 runYourScript();//运行当前代码 ，遇到函数时，先把函数放入队列。fires will be at the root of the
                //stack trace.
