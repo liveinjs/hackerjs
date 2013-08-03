@@ -1,0 +1,6 @@
+主角：函数
+
+runYourScript();
+while (atLeastOneEventIsQueued) {
+fireNextQueuedEvent();
+};
