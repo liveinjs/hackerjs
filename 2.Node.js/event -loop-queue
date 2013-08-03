@@ -1,3 +1,5 @@
+Each JavaScript environment comes with its own set of async functions.
+
 event-loop-queue ：可以理解为 回调函数循环队列
 调用函数： 就是javascript 丢给VM一个任务，让VM去做。
 
