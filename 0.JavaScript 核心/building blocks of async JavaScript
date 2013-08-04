@@ -12,3 +12,6 @@ These are the basic building blocks that you’ll use to define complex async be
 
 I/O Functions
 I/O Functions
+
+
+In Node, process.nextTick lets you schedule an event to fire ASAP.
