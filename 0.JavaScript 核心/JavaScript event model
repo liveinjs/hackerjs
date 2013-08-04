@@ -12,3 +12,38 @@ containing the loop).
 • After the loop, i === 4, having been incremented until it failed the condition
 i <= 3.
 • JavaScript event handlers don’t run until the thread is free.
+
+-----------------------------------------------------------------------------------------
+What if a rare event happened between these two lines of code?
+
+Blocking the Thread
+This piece of code demolished my preconceptions about JavaScript events:
+EventModel/loopBlockingTimeout.js
+var start = new Date;
+setTimeout(function(){
+var end = new Date;
+console.log('Time elapsed:', end - start, 'ms');
+}, 500);
+while (new Date - start < 1000) {};
+
+
+if you run the code, you’ll get
+something like this:
+❮ Time elapsed: 1002ms
+You’ll probably get a slightly different number; setTimeout and setInterval are,
+alas, a lot less precise than you’d hope (see Timing Functions, on page 5).
+But it will definitely be at least 1000, because the setTimeout callback can’t fire
+until the while loop has finished running.
+
+----------------------------------------------------------------------------------------
+So, if setTimeout isn’t using another thread, then what is it doing?
+
+
+---------------------------------------------------------------------------------------
+
+JavaScript code can never be interrupted,because events can be queued only while code is running; they can’t fire until
+it’s done.
+
+javascript 不能被打断（阻塞住/卡住），因为 一个“event ” 仅仅当代码在运行的时候，才可以排队 ，
+而只有排队了的 "event" 才可以"fired"
+
