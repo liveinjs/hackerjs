@@ -1,0 +1,14 @@
+Now or Later?
+
+for (var i = 1; i <= 3; i++) {
+setTimeout(function(){ console.log(i); }, 0);
+};
+
+To understand why the output is 4, 4, 4 instead, there are three things you
+need to know.
+• There’s only one variable named i, scoped by the declaration var i (which,
+incidentally, scopes it not within the loop but within the closest function
+containing the loop).
+• After the loop, i === 4, having been incremented until it failed the condition
+i <= 3.
+• JavaScript event handlers don’t run until the thread is free.
