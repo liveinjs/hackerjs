@@ -1,0 +1,9 @@
+JavaScript code can never be interrupted,
+
+译： javascript 代码能  ，从不中断，
+
+because events can be queued only while code is running; they can’t fire until
+it’s done.
+
+因为 一: event，仅在代码运行的时候，压入 event queue ; 
+     二: 只有代码最后一行运行完毕， event 才可以 “fired” .
