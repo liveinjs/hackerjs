@@ -41,7 +41,7 @@ setTimeout(function() {
 -----------------------------------------------
 效果： 蓝 ， 1 秒之后，黑，3秒之后 绿
 Some I/O functions have both synchronous and async effects. 
-javascript 角度，这背景的颜色的修改是即时的， 但是不被渲染，直到 返回 event queue。
+javascript 角度，这背景的颜色的修改是即时的， 但是不被渲染，直到 返回 event queue。（直到返回 event queue, 才把改变应用到 文档）
 
 同步修改，异步渲染。
 
