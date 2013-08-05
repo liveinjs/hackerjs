@@ -1,6 +1,6 @@
 JavaScript code can never be interrupted,
 
-译： javascript 代码能  ，从不中断，
+译： javascript code 不能被打断，
 
 because events can be queued only while code is running; they can’t fire until
 it’s done.
