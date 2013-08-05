@@ -17,7 +17,7 @@ setTimeout(function() {
   while (new Date - start < 1000) {
     // wait 1 second...
   };
-},0); //异步渲染，background-color： box.style.backgroundColor;
+},0); //返回 event queue 的时候，开始渲染，background-color： box.style.backgroundColor;
 
 setTimeout(function() {
     
