@@ -11,18 +11,18 @@
 setTimeout(function() {
     
   var box = document.getElementById('box');
-  box.style.backgroundColor = '#000';
+  box.style.backgroundColor = '#000';//同步修改,
 
   var start = new Date;
   while (new Date - start < 1000) {
     // wait 1 second...
   };
-},0);
+},0); //异步渲染，background-color： box.style.backgroundColor;
 
 setTimeout(function() {
     
   var box = document.getElementById('box');
-  box.style.backgroundColor  = "#0f0";
+  box.style.backgroundColor  = "#0f0";//同步修改,
 
   var start = new Date;
   while (new Date - start < 1000) {
@@ -43,6 +43,6 @@ setTimeout(function() {
 Some I/O functions have both synchronous and async effects. 
 javascript 角度，这背景的颜色的修改是即时的， 但是不被渲染，直到 返回 event queue。（直到返回 event queue, 才把改变应用到 文档）
 
-同步修改，异步渲染。
+
 
 
