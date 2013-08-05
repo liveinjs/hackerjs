@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: #00F;  
+}
+</style> 
+<script>
+setTimeout(function() {
+    
+  var box = document.getElementById('box');
+  box.style.backgroundColor = '#000';
+
+  var start = new Date;
+  while (new Date - start < 1000) {
+    // wait 1 second...
+  };
+},0);
+
+setTimeout(function() {
+    
+  var box = document.getElementById('box');
+  box.style.backgroundColor  = "#0f0";
+
+  var start = new Date;
+  while (new Date - start < 1000) {
+    // wait 1 second...
+  };
+},2000);
+
+</script>
+</head>
+<body>
+<div id="box"></div>
+</body>
+
+</html>
+
+-----------------------------------------------
+效果： 蓝 ， 1 秒之后，黑，3秒之后 绿
+Some I/O functions have both synchronous and async effects. 
+javascript 角度，这背景的颜色修改是即时的， 但是不被渲染，直到 返回 event queue
+
+
