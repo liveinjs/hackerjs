@@ -1,0 +1,17 @@
+异步函数看起来是这样的， 一个函数调用另一个函数（callback）,并让这个函数(callback)延迟执行（把这个函数放入 event queue ）
+,这个 被 调用的callback, 在javascript 源代码全部执行完毕后，开始执行( fire even ).
+
+异步编程又叫事件驱动编程： 就是当一个“感兴趣”的事件发生后，不是简单的返回，而是调用一个函数去处理。
+
+
+var functionHasReturned = false ;
+
+a() ;
+
+function a() {
+
+        setTimeout(console.log(functionHasReturned),0); //console.log, be queued, javascript 代码继续往下执行
+}
+
+var functionHasReturned = true;
+//运行完最后一行javascript 源代码后，开始处理 event queue .
