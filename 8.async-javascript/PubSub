@@ -1,0 +1,15 @@
+
+
+jQuery  Pub  link.onclick   
+        Pub  link.onclick  
+        
+        
+function clickHandler1(); Sub <- link.onclick
+function clickHandler2(); Sub <- link.onclick
+
+
+
+
+$(link)
+.bind('click', clickHandler1)
+.bind('click', clickHandler2);
