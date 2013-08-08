@@ -1,1 +1,12 @@
-event loop
+
+runYourScript();
+
+// event queue: event loop
+while (atLeastOneEventIsQueued) { 
+  fireNextQueuedEvent();
+};
+
+
+
+One implication of this is that each event that fires will be at the root of the
+stack trace.
