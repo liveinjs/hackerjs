@@ -1,0 +1,7 @@
+node debug  e.js
+
+
+------
+var a = 0;
+debugger;
+var b = 2;
