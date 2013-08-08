@@ -23,7 +23,7 @@ console.log(c);
 
 function aa (d) {
     console.log('Goodnight, ' + d);
-    process.on('exit', function() {
+    process.on('exit', function e() {  //  有三个  “exit event ”   排入 "event queue" ,旦是在 第一个 exit event 运行后，进程就退出了！
         console.log('Goodnight, ' + d);
     })
 };
@@ -34,4 +34,4 @@ Goodnight, room
 Goodnight, moon
 Goodnight, cow jumping over the moon
 100
-Goodnight, room
+Goodnight, room //有三个  “exit event ”   排入 "event queue" ,旦是在 第一个 exit event 运行后，进程就退出了！所以只输出这一行。
