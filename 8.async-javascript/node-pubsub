@@ -1,5 +1,7 @@
+//
 //javascript 异步编程模式 PubSub
-//javascript 异步接口有两类，一类是通过 javascript 源代码 自定义实现的，一个是 javascript 编程环境提供的。
+//javascript 异步接口有两大分类，一类是通过 javascript 源代码 自定义实现的，
+// 另一个是 javascript 编程环境提供的 两大类：I/O Functions, Timing Functions  
 
 
 
