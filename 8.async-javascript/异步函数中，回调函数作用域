@@ -1,0 +1,21 @@
+function a() {
+    var a = "a";
+    setTimeout(function(){
+    console.log(a)
+    },0) //异步函数 don to native code , setTimeout event be queued.
+}
+
+a();
+
+function a() {
+    var a = "b";
+    setTimeout(function(){
+        console.log(a)
+    },0)
+}
+
+//out: b ;
+
+
+Every async function in JavaScript is built on some other async function(s).
+It’s async functions all the way down (to native code)!
