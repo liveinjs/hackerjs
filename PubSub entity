@@ -1,0 +1,7 @@
+The architects of Node’s API
+liked PubSub so much that they decided to include a generic PubSub entity
+called EventEmitter that other objects can inherit from.
+
+
+From a software architecture perspective, jQuery publishes the link element’s
+events to anyone who wants to subscribe. That’s why it’s called “PubSub.” ( jQuery is PubSub)
