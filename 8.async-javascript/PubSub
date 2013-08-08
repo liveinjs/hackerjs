@@ -1,3 +1,5 @@
+From a software architecture perspective, jQuery publishes the link element’s
+events to anyone who wants to subscribe. That’s why it’s called “PubSub.”
 
 
 jQuery  Pub  link.onclick   
