@@ -10,7 +10,7 @@
 
 
 
-var PubSub = {handlers:{}}  // PubSub 对象 ，跟javascript event queue 好像哦！
+var PubSub = {handlers:{}}  // PubSub 对象 ，跟javascript event queue 好像哦！ 
 
 //订阅接口
 PubSub.on = function (eventType, handler) {
