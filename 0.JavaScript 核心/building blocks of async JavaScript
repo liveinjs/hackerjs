@@ -4,7 +4,14 @@ building blocks of async JavaScript
 
 
 The async functions provided by the JavaScript environment generally fall into two categories: I/O and timing.
-javascript 环境提供的异步函数 通常归纳为两类 : I/O ， timing
+javascript 环境提供的异步函数 通常归纳为两类 : I/O ， timing .
+
+注意：javascript异步函数  与 javascript 异步编程，是两个不同的概念。
+
+javascript异步函数，专指javascript 运行环境提供的异步函数（I/O ， timing ），以及以 javascript异步函数为基础，自定义的异步处理函数。
+
+
+
 
 These are the basic building blocks that you’ll use to define complex async behaviors in your applications.
 
