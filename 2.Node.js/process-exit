@@ -65,7 +65,9 @@ function aa (d) {
     console.log('Goodnight, ' + d);
     setTimeout(function() {
         console.log('Goodnight, ' + d);
-        console.log('Goodnight, ' + c); //这个c 的值为 1000, 为这事件处理函数是在javascript 源代码 运行完毕后之执行的！
+        //这个c 的值为 1000, 因为这事件处理函数是在javascript 源代码 运行完毕后之执行的！
+        //也就是说，这个事件处理函数在 v8引擎 执行了 c=1000,之后执行。
+        console.log('Goodnight, ' + c); 
     },0)
 };
 
