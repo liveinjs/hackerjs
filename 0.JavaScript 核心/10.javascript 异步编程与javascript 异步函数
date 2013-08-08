@@ -2,7 +2,42 @@
 
 javascript 异步函数，指javascript 源代码 执行环境 提供的异步函数。javascript 本身的异步事件模型，  event queue,event loop.
 
-javascript 异步编程，指得是，通过编写javascript 源代码，实现 异步操作。
+javascript 异步编程，指得是，通过编写javascript 源代码，实现 异步操作。例如：
+
+
+var PubSub = {handlers:{}}  // PubSub 对象 ，跟javascript event queue 好像哦！ 
+
+//订阅接口
+PubSub.on = function (eventType, handler) {
+    if(!(eventType in this.handlers)) {
+        this.handlers[eventType] = [];
+    }
+
+    this.handlers[eventType].push(handler);
+    return this;
+}
+
+//发布接口
+
+PubSub.emit = function(eventType) {
+    var handlerArgs = Array.prototype.slice.call(arguments, 1); //去掉第一个参数
+    for (var i = 0; i< this.handlers[eventType].length;i++){
+                          this.handlers[eventType][i].apply(this, handlerArgs);
+    }
+    return this;
+}
+
+//增加一个订阅者
+PubSub.on('wow',function(b){
+    console.log('receive: ' + b)
+})
+
+//所那有订阅者发布'hello'
+PubSub.emit('wow', 'hello');
+
+var a=0;
+
+console.log(a);
 
 
 
