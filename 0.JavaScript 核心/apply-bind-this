@@ -1,0 +1,23 @@
+var o = {x:0};
+
+o.onclick= function () {
+    b.apply(this, arguments); //out: { x: 0, onclick: [Function], onclick2: [Function] }
+    c.apply(this, arguments); //out: { x: 0, onclick: [Function], onclick2: [Function] }
+
+o.onclick2 = function () {
+    b.bind(o); //out: { x: 0, onclick: [Function], onclick2: [Function] }
+    c.bind(o); //out: { x: 0, onclick: [Function], onclick2: [Function] }
+    b(); // out: window object, node.js prcoeess object
+    c(); // out: window object, node.js prcoeess object
+}
+
+function b(){
+    console.log(this);
+}
+
+function c(){
+    console.log(this);
+}
+
+o.onclick()  ;
+o.onclick2();
