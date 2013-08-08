@@ -1,0 +1,8 @@
+不同的概念！
+
+javascript 异步函数，指javascript 源代码 执行环境 提供的异步函数。javascript 本身的异步事件模型，  event queue,event loop.
+
+javascript 异步编程，指得是，通过编写javascript 源代码，实现 异步操作。
+
+
+
