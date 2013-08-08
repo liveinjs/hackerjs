@@ -35,3 +35,52 @@ Goodnight, moon
 Goodnight, cow jumping over the moon
 100
 Goodnight, room //有三个  “exit event ”   排入 "event queue" ,旦是在 第一个 exit event 运行后，进程就退出了！所以只输出这一行。
+
+--------------------------------------------
+
+var a =    ['room', 'moon', 'cow jumping over the moon'];
+
+for (var b in a) {
+
+    aa(a[b]) ;
+}
+
+var  c = 100;
+
+console.log(c);
+
+function aa (d) { 
+
+//javascript 事件流程
+/* javascript源代码 运行完毕后 
+->进入event queue 
+->处理 first event 
+->回到 javascript 源代码,执行 first event 的事件处理函数
+->事件处理函数的上下文不变，该事件处理函数执行完之后，
+->再回到event 
+-> 处理下一个event
+...
+*/
+
+    console.log('Goodnight, ' + d);
+    setTimeout(function() {
+        console.log('Goodnight, ' + d);
+        console.log('Goodnight, ' + c); //这个c 的值为 1000, 为这事件处理函数是在javascript 源代码 运行完毕后之执行的！
+    },0)
+};
+
+var c = 1000;
+
+//out
+Goodnight, room
+Goodnight, moon
+Goodnight, cow jumping over the moon
+100
+Goodnight, room
+Goodnight, 1000
+Goodnight, moon
+Goodnight, 1000
+Goodnight, cow jumping over the moon
+Goodnight, 1000
+
+Process finished with exit code 0
