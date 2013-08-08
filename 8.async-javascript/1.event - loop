@@ -1,7 +1,10 @@
 runYourScript(); //执行完 javascript 源代码 
 
 // event queue: event loop
-while (atLeastOneEventIsQueued) { //进入 event queue , 并处理事件，那个event 先触发，那个 event 先被处理。
+while (atLeastOneEventIsQueued) { 
+//进入 event queue , 并处理事件，哪个event 先 emit，哪个 event 第一时间被处理。两个 event 同时 emit,
+//谁先 queued ,谁先 fired.
+
   fireNextQueuedEvent();
 };
 
