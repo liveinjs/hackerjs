@@ -15,3 +15,32 @@ function clickHandler2(); Sub <- link.onclick
 $(link)
 .bind('click', clickHandler1)
 .bind('click', clickHandler2);
+
+
+
+
+----------------------------------------
+
+From a software architecture perspective, jQuery publishes the link element’s
+events to anyone who wants to subscribe. That’s why it’s called “PubSub.” (jQuery is PubSub object )
+
+----------------------------------------
+
+Let’s use Node’s EventEmitter as an example of a PubSub interface. It has a
+simple, nearly minimal design.
+
+To add an event handler to an EventEmitter, just call on with the event type and
+the handler.
+emitter.on('evacuate', function(message) {
+console.log(message);
+});
+The emit method will call all handlers for the given event type. For instance,
+the following
+emitter.emit('evacuate');
+would call all evacuate handlers.
+
+The emit method will call all handlers for the given event type. For instance,
+the following
+emitter.emit('evacuate');
+would call all evacuate handlers.
+Note that the term event here has nothing to do with the event queue.
