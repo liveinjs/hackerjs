@@ -7,9 +7,11 @@
 
 // 另一类是通过 javascript 源代码 自定义实现的。如下
 //
+//When an object has a PubSub interface, we call it an evented object. 
 
 
 
+// PubSub object has a PubSub interface, we call it evented object.
 var PubSub = {handlers:{}}  // PubSub 对象 ，跟javascript event queue 好像哦！ 
 
 //订阅接口
