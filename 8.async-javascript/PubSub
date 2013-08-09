@@ -1,3 +1,5 @@
+
+
 观察者模式又叫发布订阅模式（Publish/Subscribe），它定义了一种一对多的关系，让多个观察者对象同时监听某一个主题对象，这个主题对象的状态发生变化时就会通知所有的观察者对象，使得它们能够自动更新自己。
 
 使用观察者模式的好处：
@@ -8,7 +10,7 @@
 
 ---------------------------------------------------------------
 
-
+When an object has a PubSub interface, we call it an evented object. 
 From a software architecture perspective, jQuery publishes the link element’s
 events to anyone who wants to subscribe. That’s why it’s called “PubSub.”
 
