@@ -1,0 +1,5 @@
+a Deferred is a Promise!
+More precisely, it’s a superset of Promise with one critical addition: you can trigger
+a Deferred directly.
+
+A pure Promise only lets you add more callbacks; someone else has to trigger them.
