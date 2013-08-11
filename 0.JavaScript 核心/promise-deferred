@@ -3,3 +3,30 @@ More precisely, it’s a superset of Promise with one critical addition: you can
 a Deferred directly.
 
 A pure Promise only lets you add more callbacks; someone else has to trigger them.
+
+//Deferred
+
+var promptDeferred = new $.Deferred();
+promptDeferred.always(function(){ console.log('A choice was made:'); });
+promptDeferred.done(function(){ console.log('Starting game...'); });
+promptDeferred.fail(function(){ console.log('No game today.'); });
+
+
+
+$('#playGame').focus().on('keypress', function(e) {
+var Y = 121, N = 110;
+if (e.keyCode === Y) {
+promptDeferred.resolve();
+} else if (e.keyCode === N) {
+promptDeferred.reject();
+} else {
+return false; // our Deferred remains pending
+};
+});
+
+
+///
+If we pass promptPromise around but keep promptDeferred to ourselves, we can rest assured
+that none of our callbacks will fire until we want them to fire.
+
+我想 控制 a pure Promise , 比如：想让它 fire 就fire , 就要把  Promise 升级为 Deferred Promise
