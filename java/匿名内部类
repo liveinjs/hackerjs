@@ -1,1 +1,17 @@
 new interfacename(){......}; 或 new superclassname(){......}; 
+
+
+在JAVA中 接口是不能被NEW的 但在匿名类中为什么可以 请看例
+
+b1.addActionListener(new ActionListener(){
+
+   public void actionPerformed(ActionEvent arg0) {
+    setVisible(true);
+    
+   }
+   
+  });
+
+
+
+那就是说这个匿名类实现了这个接口呗~~~
