@@ -1,1 +1,3 @@
 covariant return type：基类中某个函数在派生类中可以override，并且返回值得是基类中那个函数返回值的子类。
+
+http://docs.oracle.com/javase/tutorial/java/javaOO/returnvalue.html
