@@ -1,20 +1,27 @@
-new interfacename(){......}; 或 new superclassname(){......}; 
+Syntax of Anonymous Classes
 
+As mentioned previously, an anonymous class is an expression. The syntax of an anonymous class expression is like the invocation of a constructor, except there is a class definition contained in a block of code.
 
-接口  对象 =new  接口的实现类()
+Consider the instantiation of the frenchGreting object:
 
+        HelloWorld frenchGreeting = new HelloWorld() {
+            String name = "tout le monde";
+            public void greet() {
+                greetSomeone("tout le monde");
+            }
+            public void greetSomeone(String someone) {
+                name = someone;
+                System.out.println("Salut " + name);
+            }
+        };
+The anonymous class expression consists of the following:
 
-在JAVA中 接口是不能被NEW的 但在匿名类中为什么可以 请看例
+The new operator
 
-b1.addActionListener(new ActionListener(){
+The name of an interface to implement or a class to extend. In this example, the anonymous class is implementing the interface HelloWorld.
 
-   public void actionPerformed(ActionEvent arg0) {
-    setVisible(true);
-    
-   }
-   
-  });
+Parentheses that contain the arguments to a constructor, just like a normal class instance creation expression. Note: In the case of implementing an interface, there is no constructor, so you use an empty pair of parentheses, like in this example.
 
+A body, which is a class declaration body. More specifically, in the body, method declarations are allowed but statements are not.
 
-
-那就是说这个匿名类实现了这个接口呗~~~
+Because an anonymous class definition is an expression, it must be part of a statement. In this example, the anonymous class expression is part of the statement that instantiates the frenchGreeting object. (This explains why there is a semicolon after the closing brace.)
