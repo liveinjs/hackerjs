@@ -1,6 +1,9 @@
 new interfacename(){......}; 或 new superclassname(){......}; 
 
 
+接口  对象 =new  接口的实现类()
+
+
 在JAVA中 接口是不能被NEW的 但在匿名类中为什么可以 请看例
 
 b1.addActionListener(new ActionListener(){
