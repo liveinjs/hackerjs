@@ -1,0 +1,7 @@
+阿里云服务器： IaaS:是Infrastructure as a Service，可以在上面安装自己的系统。
+BAE: paas, PaaS:是Platform-as-a-Service的缩写，意思是平台即服务。 
+    把服务器平台作为一种服务提供的商业模式。例如BAE，通过互联网就直接能使用开发平台，不需要本地安装各类的开发环境。
+    
+    
+SaaS:是Software-as-a-service，国内通常叫做软件运营服务模式，简称为软营模式.
+提供的是软件服务，例如Office365等，通过互联网就直接能使用这个软件应用，不需要本地安装。
