@@ -3,6 +3,9 @@
 
 非静态初始化块:在每个对象生成时都会被执行一次,可以初始化类的实例变量.
 
+初始化块就是构造器的补充，初始化块是不能接收任何参数的，定义的一些所有对象共有的属性、方法等内容时就可以用初始化块了初始化！！
+好处是可以提高初始化块的复用，提高整个应用的可维护性。
+
 A class can have any number of static initialization blocks, and they can appear anywhere in the class body. 
 
 The runtime system guarantees that static initialization blocks are called in the order that they appear in the source code.
