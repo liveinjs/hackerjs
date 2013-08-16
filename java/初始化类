@@ -1,3 +1,8 @@
+静态初始化块:使用static定义,当类装载到系统时执行一次.若在静态初始化块中想初始化变量,那仅能初始化类变量,
+即static修饰的数据成员.
+
+非静态初始化块:在每个对象生成时都会被执行一次,可以初始化类的实例变量.
+
 A class can have any number of static initialization blocks, and they can appear anywhere in the class body. 
 
 The runtime system guarantees that static initialization blocks are called in the order that they appear in the source code.
