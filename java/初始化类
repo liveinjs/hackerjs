@@ -1,0 +1,10 @@
+A class can have any number of static initialization blocks, and they can appear anywhere in the class body. 
+
+The runtime system guarantees that static initialization blocks are called in the order that they appear in the source code.
+
+----------------------------------------
+
+
+Initializing Instance Members
+The Java compiler copies initializer blocks into every constructor. 
+Therefore, this approach can be used to share a block of code between multiple constructors.
