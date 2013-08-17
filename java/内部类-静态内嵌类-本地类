@@ -4,7 +4,7 @@ local class
 
 -------------------------------
 
-inner class,可以访问 Outclass 所有的成员属性与方法，不管是否 private,protected.
+inner class,可以访问 Outclass 所有的成员属性与方法，不管是否 private,protected. static 关键字在内部类中仅可以修饰 final variables
 
 static nested class: 事实就，就是把一个顶级类放在那个个顶级类中，为了方便包装。它只能访问 Outclass 的静态成员属性与方法。
 
