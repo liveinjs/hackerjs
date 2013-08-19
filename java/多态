@@ -1,0 +1,3 @@
+ Subclasses of a class can define their own unique behaviors and yet share some of the same functionality of the parent class.
+
+子类有自己独特的属性、行为，同时，子类也有共同的父类的属性、行为。
