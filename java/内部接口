@@ -1,0 +1,25 @@
+内部接口，本来就是静态的，不需要加 static 限定符。
+
+-----------------------
+package nodejar;
+interface OperateCar {
+    int changeLanes();
+    
+}
+class classa implements OperateCar{
+    
+    @Override
+    public int changeLanes(){
+        return 0;
+    }
+    
+    interface abc{ //内部接口，本来就是静态的，不需要加 static 限定符。
+        
+    }
+}
+
+
+class classb implements classa.abc  {
+    
+OperateCar a = new classa();
+}
