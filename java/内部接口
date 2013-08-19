@@ -23,3 +23,7 @@ class classb implements classa.abc  {
     
 OperateCar a = new classa();
 }
+
+
+
+当内部接口，被 static 修饰，可以被内部 static 方法调用。
