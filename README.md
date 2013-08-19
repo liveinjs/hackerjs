@@ -12,12 +12,7 @@ hackerjs:
 
 4.async-javascript
 
-5. http://backbonejs.org/ 源代码
-   http://jquery.org/ 源代码
-6..node.js in action
-
-5.JavaScript 语言精髓
-6.Learning Node.js
+5.java tutorials 
 
 
 产品设计/用户需求 –> 界面 → 数据建模/软件架构原型图
