@@ -1,0 +1,6 @@
+为什么要用泛型呢？
+
+使用泛型是为了编译时出现错误了能及时提醒。另外，也是限定要操作的对象类型。
+如：
+    List<String> list=new ArrayList<String>();//它的操作对象就只能是String类型。
+    class  Dog<T>{}
