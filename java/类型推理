@@ -1,0 +1,3 @@
+http://docs.oracle.com/javase/tutorial/java/generics/genTypeInference.html
+
+推理算法试图找到最明确的类型,适用于所有的参数。
