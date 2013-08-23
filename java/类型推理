@@ -1,3 +1,9 @@
 http://docs.oracle.com/javase/tutorial/java/generics/genTypeInference.html
 
 推理算法试图找到最明确的类型,适用于所有的参数。
+
+
+static <T> T pick(T a1, T a2) { return a2; }
+Serializable s = pick("d", new ArrayList<String>());
+
+//编译器推理结果: T 为: Serializable 类型
