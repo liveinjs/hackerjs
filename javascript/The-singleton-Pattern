@@ -1,0 +1,17 @@
+The-singleton-partern
+
+用一个变量，包装一组代码。通过这个变量，可以访问这一组代码。
+
+
+//最简单的一个示范，
+
+var Singleton = {
+    attribute1: true,
+    arrtibute2: 10,
+
+    method1: function(){},
+    method2: function(){}
+};
+
+
+
