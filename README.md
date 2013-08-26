@@ -14,8 +14,7 @@ hackerjs:
 
 5.java tutorials 
 6. pro_javascript_desing_patterns
-*7. learning_javascript_design_patterns
-*8. javascript_patterns
+7.http 权威指南
 
 
 产品设计/用户需求 –> 界面 → 数据建模/软件架构原型图
