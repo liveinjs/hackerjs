@@ -1,0 +1,32 @@
+function ClassA(){};
+ClassA.prototype.namea = 'ClassA';
+
+var a = new ClassA();
+
+console.log(a.namea);
+
+function ClassB(){};
+
+ClassB.test = 'test';
+ClassB.prototype = a;
+ClassB.prototype.nameb = 'ClassB';
+
+var b = new ClassB();
+
+console.log(b.namea + b.nameb + b.test);
+
+function ClassC(){};
+ClassC.prototype = b;
+ClassC.prototype.namec = 'ClassC';
+
+var c = new ClassC();
+
+console.log(c.namea + c.nameb + c.namec);
+
+//out
+
+ClassA
+ClassAClassBundefined
+ClassAClassBClassC
+
+
