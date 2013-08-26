@@ -1,0 +1,2 @@
+A primitive value is a member of one of the following built-in types: Undefined, Null, Boolean, Number, and String;
+an object is a member of the remaining built-in type Object;
