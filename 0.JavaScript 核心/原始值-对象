@@ -1,2 +1,10 @@
 A primitive value is a member of one of the following built-in types: Undefined, Null, Boolean, Number, and String;
 an object is a member of the remaining built-in type Object;
+
+
+
+
+//原始类型： Undefined, Null, Boolean, Nubmer, String
+//对象类型:  Object
+//内建的对象类型: Boolean, Number, Math, Date, String, Array, Function, Regexp, JSON,
+//Error, EvalError, RangeError, ReferenceError, SyntaxError,TypeError, URIError
