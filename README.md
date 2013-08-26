@@ -6,7 +6,7 @@ hackerjs:
 
 1.JavaScript DOM编程艺术（第二版）
 
-2.JavaScript 权威指南（第六版）
+2.JavaScript 权威指南（第六版）, ECMA - 262
 
 3.Node.js up and running
 
