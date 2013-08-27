@@ -1,0 +1,4 @@
+{@linkcode someNamepathOrURL}
+[link text here]{@linkcode someNamepathOrURL}
+{@linkcode someNamepathOrURL|link text here}
+{@linkcode someNamepathOrURL Link text here (after the first space)}
