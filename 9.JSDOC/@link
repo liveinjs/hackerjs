@@ -1,4 +1,10 @@
-{@linkcode someNamepathOrURL}
-[link text here]{@linkcode someNamepathOrURL}
-{@linkcode someNamepathOrURL|link text here}
-{@linkcode someNamepathOrURL Link text here (after the first space)}
+{@link someNamepathOrURL}
+[link text here]{@link someNamepathOrURL}
+{@link someNamepathOrURL|link text here}
+{@link someNamepathOrURL Link text here (after the first space)}
+
+
+{@link}: Link to a JSDoc namepath or an external URL. By default, links are rendered in plain text. If you prefer links to be rendered in a monospace font, you can use the configuration options template.monospaceLinks and templates.cleverLinks to change this behavior.
+{@linkcode}: Insert a link that should be rendered in a monospace font.
+{@linkplain}: Insert a link that should not be rendered in a monospace font.
+{@tutorial}: Link to a tutorial.
