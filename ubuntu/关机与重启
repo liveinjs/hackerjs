@@ -1,0 +1,5 @@
+开机： init 0 , shutdown -h 
+
+重启: init 6, reboot, halt, poweroff
+
+硬盘同步写入: sync ,关机之前用一用。
