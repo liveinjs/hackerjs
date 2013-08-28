@@ -1,0 +1,14 @@
+创建文件夹: mkdir test
+            mkdir -p test1/test2/test3
+            mkdir -p -m 711 test2/test3 
+            
+删除空文件夹:rmdir test
+           rmdir -p test1/test2/test3
+           
+删除空文件夹: rm test
+              rm -r test1/test2  #递归删除文件夹以及文件夹内的子文件夹以及文件
+              rm -r -i test      # -i 参数 ，删阶乘之前提示要不要删除
+           
+          
+            
+     
