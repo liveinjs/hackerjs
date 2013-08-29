@@ -1,0 +1,14 @@
+var  MyNameSpace = {};
+
+var MyNameSpace2 = {
+              space1: {},
+              space: {}
+              };
+              
+var Myspace = { 
+                  member1:1,
+                  member2:2,
+                  
+                  method1:f1(){},
+                  method2:f2(){}
+                  }
