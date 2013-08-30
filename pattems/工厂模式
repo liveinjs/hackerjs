@@ -46,4 +46,4 @@ AcmeBicycleShop.prototype.createBicycle = function(model) {  //创建对象方�
     }
     
     
-复杂工厂模式：是简单工厂的扩张， 先定义一个子类，再弄 “简单工厂”
+抽象工厂模式：是简单工厂的扩张， 先定义一个子类，再弄 “简单工厂”
