@@ -11,7 +11,7 @@ var BicycleFactory = {
 
 ------------------------------------------
 
-/* BicycleShop class (abstract). */
+/* BicycleShop class (abstract). */ 抽象工厂
 var BicycleShop = function() {};
 BicycleShop.prototype = {
     sellBicycle: function(model) {
@@ -20,7 +20,7 @@ BicycleShop.prototype = {
         bicycle.wash();
         return bicycle;
     },
-    createBicycle: function(model) { 
+    createBicycle: function(model) { // 工厂方法
         throw new Error('Unsupported operation on an abstract class.');
     }
 };
@@ -28,11 +28,11 @@ BicycleShop.prototype = {
 
 var AcmeBicycleShop = function() {};
 extend(AcmeBicycleShop, BicycleShop);
-AcmeBicycleShop.prototype.createBicycle = function(model) {  //创建对象方法
+AcmeBicycleShop.prototype.createBicycle = function(model) {  //工厂方法
     var bicycle;
     switch(model) {
         case 'The Speedster':
-            bicycle = new AcmeSpeedster(); //每个子类自己选择使用哪个 “简单工厂”
+            bicycle = new AcmeSpeedster(); 
             break;
         case 'The Lowrider':
             bicycle = new AcmeLowrider();
