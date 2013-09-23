@@ -2,7 +2,7 @@ Download	$ lynx http://nodejs.org
 Extract	
         $ tar zxvf node-vNN.tar
         $ cd node-vNN
-        Configure	$ ./configure --prefix=/usr/local/node
+        Configure	$ ./configure --prefix=/usr/local/node ,#默认安装位置
         Compile	$ make
         Install	$ sudo make install
         Test	$ node -v
