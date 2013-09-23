@@ -1,0 +1,18 @@
+Download	$ lynx http://nodejs.org
+Extract	
+        $ tar zxvf node-NN.tar
+        $ cd node-NN
+        Configure	$ ./configure --prefix=/usr/local/node
+        Compile	$ make
+        Install	$ sudo make install
+        Test	$ node -v
+        
+        
+        
+        
+卸载软件：
+　　＃sudo make uninstall （干掉make install命令时装进去的文件,需要管理员身份)
+　　只删除make时产生的临时文件（soft1下）：
+　　＃make clean
+    同时删除configure和make产生的临时文件(soft1下)
+    # make distclean
