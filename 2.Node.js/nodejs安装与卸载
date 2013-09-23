@@ -1,7 +1,7 @@
 Download	$ lynx http://nodejs.org
 Extract	
-        $ tar zxvf node-NN.tar
-        $ cd node-NN
+        $ tar zxvf node-vNN.tar
+        $ cd node-vNN
         Configure	$ ./configure --prefix=/usr/local/node
         Compile	$ make
         Install	$ sudo make install
