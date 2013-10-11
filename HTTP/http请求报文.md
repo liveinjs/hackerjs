@@ -15,3 +15,5 @@ or
 ＜blank line＞
 
 [＜request-body＞]
+
+回车换行符: /r/n
