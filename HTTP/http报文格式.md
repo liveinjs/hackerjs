@@ -4,7 +4,7 @@ HTTP请求报文
 
 一个HTTP请求报文由请求行（request line）、请求头部（header）、空行和请求数据4个部分组成，下图给出了请求报文的一般格式。
 
-![abc](http://pic002.cnblogs.com/images/2012/426620/2012072810301161.png)
+![abc](https://github.com/hackerjs/hackerjs/blob/master/HTTP/images/2012072810301161.png)
 
 or
 
