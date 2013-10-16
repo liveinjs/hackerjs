@@ -3,8 +3,8 @@
  
   httpObj= (('http:'==option.protocol)?http:https);
   
-  
-    !、-(单目减)、++、--、typeof, new, void, delete  《2
+    成员选择、括号、函数调用、数组下标 1
+    !、-(单目减)、++、--、typeof, new, void, delete  2
     *、/、% 3
     +、- 4
     <<、>>、>>> 5
