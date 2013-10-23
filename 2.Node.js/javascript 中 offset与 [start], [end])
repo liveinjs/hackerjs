@@ -1,0 +1,13 @@
+javascript 中 offset与 [start], [end])
+
+
+buf.toString([encoding], [start], [end])#
+encoding String, Optional, Default: 'utf8'
+start Number, Optional, Default: 0
+end Number, Optional, Default: buffer.length
+
+start ,指开始的位置，并包括这位。
+end, 表示结束的位置，不包括这位。
+
+
+offset 指位移多少位。
