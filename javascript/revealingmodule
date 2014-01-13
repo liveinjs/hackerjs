@@ -1,0 +1,26 @@
+//这个模式的优点 就是，良好的api接口，代码组织，好阅读
+
+//缺点是1: 只暴露 公共函数;2, 私有方法，用引公共方法，再公共方法，不可以覆盖、修改（打补丁）。
+
+var myRevealingModule = (function(){
+    var name = 'John Smith';
+
+    var age = 40;
+
+    function updatePerson(){
+        name = 'John Smith Updated';
+        var myName = getPerson(); //引用了要 public 的函数 
+        return myname + "haha";
+    }
+    function setPerson(){
+        name = 'John Smith Set';
+    }
+    function getPerson(){ //这是要 public 的函数 , 不可以被重写，修改，因为 updatePerson(),中引用了它！ 修改可能导致updatePerson() 函数工作不正常
+        return name;
+    }
+
+    return {
+        set:setPerson,
+        get:getPerson    
+    }
+}())
